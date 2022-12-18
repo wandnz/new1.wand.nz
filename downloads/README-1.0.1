@@ -1,0 +1,107 @@
+LICENSE
+
+  globaliser -- programmatically replace globals in C source code
+  Copyright (C) 2003-2006 Sam Jansen
+
+  This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the Free
+  Software Foundation; either version 2 of the License, or (at your option)
+  any later version.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+  more details.
+
+  You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc., 59
+  Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+VERSION
+
+  1.0.1
+  2006-09-11
+
+INTRODUCTION
+
+  globaliser is a program that replaces global variables in preprocessed C
+  source code.
+
+USAGE
+
+  globaliser [-vv] <globals_file> 
+
+  The globaliser will read from stdin and output to stdout. It takes one
+  option, -v or -vv change verbosity level to report more information about
+  globals encountered. It takes one required argument, a file which lists
+  the global variables to be replaced, one per line.
+
+  Examples of the usage of globaliser can be found in the Network Simulation
+  Cradle where it is used on the FreeBSD, Linux and OpenBSD network stacks.
+
+GLOBALS FILE
+
+  The globals file is a list of identifiers to be modified, one on each line.
+  White space is ignored. If the identifier has a '/' in it, it identifies a
+  static local variable. This is best illustrated with an example.
+
+# -- globals.txt
+global_var_1
+func/static_local_var_1
+global_var_2
+# -- end globals.txt
+
+  In the above example, two global variables 'global_var_1' and 'global_var_2'
+  will be modified and the static local variable 'static_local_var_1' in the
+  function 'func'.
+
+ADVANCED FUNCTIONALITY
+
+  There is also support for variables in special sections. A variable in a
+  section that is to be specially handled should have '$section' appended to
+  it's name. For example 'global_var_1$section'. For the 'start' and 'stop'
+  variables to be correct for a section, a line in the globals file should be
+  created like so 'my_sec$section_stopstart'. This makes the 'start' and 'stop'
+  variables for the section 'my_sec' handled like the variables with '$section'
+  in their name. This functionality is probably not required by most users and
+  can be ignored. For an example of this in use, look for the Network Simulation
+  Cradle project downloadable from the same website this is.
+
+KNOWN BUGS AND LIMITATIONS
+
+# gcc Attribute Syntax
+
+  The gcc attributes -- __attribute__((attr)) -- are supported, but not fully.
+  gcc allows these to be used in all sorts of ways in the syntax, which makes
+  them rather hard to parse. I've added support for the ways they appear in the
+  code I have encountered so far, but there are certainly cases that I have yet
+  to cover. Adding further support gets more and more difficult; the grammar is
+  complex enough already.
+
+CHANGE HISTORY
+
+  2006-09-11
+  1.0.1
+
+    Version 1.0.1 fixes a small bug reported by Will Welch; the following code
+    did not parse:
+
+    #include <linux/rbtree.h>
+    foo = (struct rb_root) { NULL, };
+
+    Due to the danging ',' character.
+
+  2006-03-02
+  1.0.0
+
+    Initial release.
+
+
+AUTHORS
+
+  Sam Jansen
+  sam@wand.net.nz
+  WAND Network Research Group
+  Department of Computer Science, University of Waikato, Hamilton, New Zealand
+
+vim: textwidth=80 autoindent
