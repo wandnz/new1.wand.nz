@@ -49,20 +49,6 @@ To set the image of a person, drop the image into `assets/images/` . Make sure t
 eg. name: Jane Doe
 Will request an image called jane_doe.[image extention]
 
-#### Addding a custom tab name
-Add the tab variable to the front matter with any value, then the title varaible with the tab name you want.
-
-eg.
-
-```yml
----
-layout: person
-name: [full name of person]
-tab: yes
-title: [sets the displayed tab name]
----
-```
-
 #### Adding a new category of people
 Simply append your category to `_data/pCategory.yml` in the format
 
