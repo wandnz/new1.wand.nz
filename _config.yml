@@ -1,5 +1,20 @@
 ---
-# Collections, output value will define a distinct page for each item in the collection.
+baseurl: ""                  # the subpath of your site, e.g. /blog
+url: "https://new1.wand.nz"  # the base hostname & protocol for your site, e.g. http://example.com
+
+title: WAND Group
+email: contact@wand.net.nz
+description: >-
+   WAND was the Network Research Group in the University of Waikato's Computer Science Department
+
+copyright: >-
+  &copy; WAND Group | <a href="mailto:contact@wand.net.nz">contact@wand.net.nz</a>
+
+remote_theme: wandnz/jekyll-theme-wand2
+
+twitter_username: wand_nz
+github_username: wandnz
+
 collections_dir: collect
 
 collections:
@@ -9,15 +24,3 @@ collections:
     output: true
   projects:
     output: true
-
-title: WAND Group
-email: contact@wand.net.nz
-description: >-
-   WAND was the Network Research Group in the University of Waikato's Computer Science Department
-baseurl: ""                  # the subpath of your site, e.g. /blog
-url: "https://new1.wand.nz"  # the base hostname & protocol for your site, e.g. http://example.com
-copyright: >-
-  &copy; WAND Group | <a href="mailto:contact@wand.net.nz">contact@wand.net.nz</a>
-remote_theme: wandnz/jekyll-theme-wand2
-twitter_username: wand_nz
-github_username: wandnz
