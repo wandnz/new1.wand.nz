@@ -134,8 +134,6 @@ As long as there is a collection existing with the name value lowercase (eg. peo
 
 **default** - Will simply output the content unformatted and center aligned. This layout is designed as a gateway for other layouts, therefore this layout is not reccommended for using with content directly.
 
-**maps** - Outputs the content in a div 40% of the page width, leaving space on the right for a google maps embed.
-
 **people** - Any content will be output normally. Then a list of the people in the peoples collection will be output and formatted in a tidy manner.
 
 **person** - Name and role values will be displayed next to an image that's src is derived from the image name. Any input content will then be attached below this, followed by a table of projects that have been listed in the person's front matter.
@@ -149,8 +147,6 @@ As long as there is a collection existing with the name value lowercase (eg. peo
 **sections** - Split the content based on input `<!--split-->` tags. Every second section has it's background colour set to off white.
 
 **topic** - Display input content and then list all projects associated with the topic in a table.
-
-**twitter** - Similar to maps, output the content to fill 60% of the display width and then attach a twitter scroll to the right side of the content.
 
 <!--split-->
 

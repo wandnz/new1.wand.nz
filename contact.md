@@ -1,5 +1,5 @@
 ---
-layout: maps
+layout: plain
 title: Contact
 ---
 
