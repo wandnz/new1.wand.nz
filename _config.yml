@@ -12,13 +12,14 @@ collections:
   wits:
     output: true
 
-# #-----Comment out for local use-----
-title: WAND
+title: WAND Group
 email: contact@wand.net.nz
 description: >-
-   WAND is the Network Research Group at the University of Waikato Computer Science Department
-baseurl: ""                               # the subpath of your site, e.g. /blog
+   WAND was the Network Research Group in the University of Waikato's Computer Science Department
+baseurl: ""                  # the subpath of your site, e.g. /blog
 url: "https://new1.wand.nz"  # the base hostname & protocol for your site, e.g. http://example.com
+copyright: >-
+  &copy; WAND Group | <a href="mailto:contact@wand.net.nz">contact@wand.net.nz</a>
+remote_theme: wandnz/jekyll-theme-wand2
 twitter_username: wand_nz
 github_username: wandnz
-remote_theme: wandnz/jekyll-theme-wand2
