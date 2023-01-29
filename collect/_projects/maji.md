@@ -2,7 +2,7 @@
 layout: sections
 name: maji
 topic: Archived projects
-description: Maji is an implementation of an IPFIX meter based on the libtrace packet capture and processing library. IPFIX itself is a standardised method for performing and exporting flow measurement data, similar to the Cisco NetFlow standard. 
+description: Maji is an implementation of an IPFIX meter based on the libtrace packet capture and processing library. IPFIX itself is a standardised method for performing and exporting flow measurement data, similar to the Cisco NetFlow standard.
 title: maji
 ---
 
@@ -20,14 +20,14 @@ Maji is open-source software and has been released under version 2 of the GPL. O
 
 ## Features
 
-*   Measure flows based on packet input provided via any libtrace-supported input format, including live PCAP interfaces, DAG capture cards and most common trace file formats
-*   Create your own custom template using any combination of over 50 standard IPFIX information elements
-*   No limit on the number of templates that can be active at any given time
-*   Export IPFIX messages via SCTP, TCP, UDP, stdout or to an SQLite database
-*   Pluggable information element modules make it easy to add new information elements.
-*   Support for Enterprise information elements and dynamic-length elements
-*   Create and export IPFIX messages containing option template records
-*   Configure the frequency that flow records for expired flows are exported
+- Measure flows based on packet input provided via any libtrace-supported input format, including live PCAP interfaces, DAG capture cards and most common trace file formats
+- Create your own custom template using any combination of over 50 standard IPFIX information elements
+- No limit on the number of templates that can be active at any given time
+- Export IPFIX messages via SCTP, TCP, UDP, stdout or to an SQLite database
+- Pluggable information element modules make it easy to add new information elements.
+- Support for Enterprise information elements and dynamic-length elements
+- Create and export IPFIX messages containing option template records
+- Configure the frequency that flow records for expired flows are exported
 
 Maji acts as an IPFIX meter only. A small set of simple collectors have been implemented and are included with the maji distribution, but these are primarily intended for testing and verification of the maji exporters. The collection service they provide is very limited in its usefulness. However, as the IPFIX messages exported by the maji meter are entirely IPFIX compliant, it should be relatively easy to implement a collector to suit your own requirements. The simple collectors included with maji would serve as an excellent starting point and the documentation also includes notes on how one might go about extend the existing collectors.
 
@@ -39,24 +39,24 @@ Unlike most existing IPFIX implementations, which only support a limited pre-def
 
 Maji supports the following export mechanisms:
 
-*   Network over SCTP (requires a listening collector to be running)
-*   Network over TCP (requires a listening collector to be running)
-*   Network over UDP (requires a listening collector to be running)
-*   SQLite database (requires SQLite to be installed)
-*   Terminal via stdout
+- Network over SCTP (requires a listening collector to be running)
+- Network over TCP (requires a listening collector to be running)
+- Network over UDP (requires a listening collector to be running)
+- SQLite database (requires SQLite to be installed)
+- Terminal via stdout
 
 ## Requirements
 
 Maji requires the following libraries:
 
-*   [libtrace](https://github.com/LibtraceTeam/libtrace/wiki)
-*   [libconfuse](https://github.com/martinh/libconfuse)
-*   [libwandevent](../downloads/libwandevent-2.0.0.tar.gz)
+- [libtrace](https://github.com/LibtraceTeam/libtrace/wiki)
+- [libconfuse](https://github.com/martinh/libconfuse)
+- [libwandevent](../downloads/libwandevent-2.0.0.tar.gz)
 
 The following libraries are optional, but required if you wish to use the associated exporter:
 
-*   libsctp - required for SCTP export
-*   libsqlite3 - required for SQLite export
+- libsctp - required for SCTP export
+- libsqlite3 - required for SQLite export
 
 Maji has been developed and tested on the Linux operating system (specifically Debian Squeeze). We doubt that it will build on any other operating system, but you're welcome to try it. Support for other operating systems, e.g. FreeBSD, may be added in future releases but is not a high priority at this stage.
 
@@ -76,66 +76,66 @@ We are very interested in hearing feedback on maji. If you have any requests or 
 
 The following is a list of all the information elements that have been implemented within maji thus far.
 
-*   destinationIPv4Address
-*   destinationIPv6Address
-*   destinationMacAddress
-*   destinationTransportPort
-*   flowDirection
-*   flowEndMicroseconds
-*   flowEndMilliseconds
-*   flowEndSeconds
-*   flowKeyIndicator
-*   flowStartMicroseconds
-*   flowStartMilliseconds
-*   flowStartSeconds
-*   fragmentFlags
-*   fragmentIdentification
-*   fragmentOffset
-*   icmpCodeIPv4
-*   icmpCodeIPv6
-*   icmpTypeCodeIPv4
-*   icmpTypeCodeIPv6
-*   icmpTypeIPv4
-*   icmpTypeIPv6
-*   ipClassOfService
-*   ipHeaderLength
-*   ipPayloadLength
-*   ipTotalLength
-*   ipTTL
-*   ipv4IHL
-*   ipVersion
-*   isMulticast
-*   maximumIpTotalLength
-*   maximumTTL
-*   meteringProcessId
-*   minimumIpTotalLength
-*   minimumTTL
-*   nextHeaderIPv6
-*   octetTotalCount
-*   octetTotalSumOfSquares
-*   packetTotalCount
-*   payloadLengthIPv6
-*   protocolIdentifier
-*   sourceIPv4Address
-*   sourceIPv6Address
-*   sourceMacAddress
-*   sourceTransportPort
-*   tcpAcknowledgementNumber
-*   tcpAckTotalCount
-*   tcpDestinationPort
-*   tcpFinTotalCount
-*   tcpHeaderLength
-*   tcpPshTotalCount
-*   tcpRstTotalCount
-*   tcpSequenceNumber
-*   tcpSourcePort
-*   tcpSynTotalCount
-*   tcpUrgentPointer
-*   tcpUrgTotalCount
-*   tcpWindowScale
-*   tcpWindowSize
-*   templateId
-*   totalLengthIPv4
-*   udpDestinationPort
-*   udpMessageLength
-*   udpSourcePort
+- destinationIPv4Address
+- destinationIPv6Address
+- destinationMacAddress
+- destinationTransportPort
+- flowDirection
+- flowEndMicroseconds
+- flowEndMilliseconds
+- flowEndSeconds
+- flowKeyIndicator
+- flowStartMicroseconds
+- flowStartMilliseconds
+- flowStartSeconds
+- fragmentFlags
+- fragmentIdentification
+- fragmentOffset
+- icmpCodeIPv4
+- icmpCodeIPv6
+- icmpTypeCodeIPv4
+- icmpTypeCodeIPv6
+- icmpTypeIPv4
+- icmpTypeIPv6
+- ipClassOfService
+- ipHeaderLength
+- ipPayloadLength
+- ipTotalLength
+- ipTTL
+- ipv4IHL
+- ipVersion
+- isMulticast
+- maximumIpTotalLength
+- maximumTTL
+- meteringProcessId
+- minimumIpTotalLength
+- minimumTTL
+- nextHeaderIPv6
+- octetTotalCount
+- octetTotalSumOfSquares
+- packetTotalCount
+- payloadLengthIPv6
+- protocolIdentifier
+- sourceIPv4Address
+- sourceIPv6Address
+- sourceMacAddress
+- sourceTransportPort
+- tcpAcknowledgementNumber
+- tcpAckTotalCount
+- tcpDestinationPort
+- tcpFinTotalCount
+- tcpHeaderLength
+- tcpPshTotalCount
+- tcpRstTotalCount
+- tcpSequenceNumber
+- tcpSourcePort
+- tcpSynTotalCount
+- tcpUrgentPointer
+- tcpUrgTotalCount
+- tcpWindowScale
+- tcpWindowSize
+- templateId
+- totalLengthIPv4
+- udpDestinationPort
+- udpMessageLength
+- udpSourcePort

@@ -20,7 +20,6 @@ WDCap features a modular design which allows users to specify which particular p
 
 The provided modules are as follows:
 
-
 **Packet Processing**
 
 A generic processing module that performs IP anonymization, header truncation and checksum verification.
@@ -45,10 +44,10 @@ Creates an RT protocol server which clients may connect to using any libtrace-ba
 
 WDCap requires the following libraries, all of which have been developed by WAND and will be made available (if they aren't already) upon WDCap's release:
 
-*   [libtrace](https://github.com/LibtraceTeam/libtrace/wiki)
-*   [libconfuse](https://github.com/martinh/libconfuse)
-*   libfifo
-*   libwandevent
+- [libtrace](https://github.com/LibtraceTeam/libtrace/wiki)
+- [libconfuse](https://github.com/martinh/libconfuse)
+- libfifo
+- libwandevent
 
 WDCap compiles and runs under both Linux 2.4 and 2.6.
 
@@ -68,17 +67,17 @@ The differences between the two modes are as follows:
 
 **Reliable Mode**
 
-*   Only one client may be connected at any given time.
-*   An ack must be received for a packet before it is removed from the fifo.
-*   Packets are always inserted into the fifo, even if there is no client.
-*   Messages about the fifo's status (e.g. how full it is) are periodically sent to the client.
+- Only one client may be connected at any given time.
+- An ack must be received for a packet before it is removed from the fifo.
+- Packets are always inserted into the fifo, even if there is no client.
+- Messages about the fifo's status (e.g. how full it is) are periodically sent to the client.
 
 **Unreliable Mode**
 
-*   Any number of clients are allowed (although a large number may degrade performance).
-*   Once a packet is sent to a client, the fifo internal pointers for that client are updated past that packet (no ack is required).
-*   If there are no clients, packets are not inserted into the fifo.
-*   No fifo status messages are sent.
+- Any number of clients are allowed (although a large number may degrade performance).
+- Once a packet is sent to a client, the fifo internal pointers for that client are updated past that packet (no ack is required).
+- If there are no clients, packets are not inserted into the fifo.
+- No fifo status messages are sent.
 
 Essentially, reliable mode is recommended for transporting data between critical instances of WDCap, e.g. between a capture point and a machine writing the trace to disk. Unreliable mode is best when you want to allow general libtrace-based applications access to live packet data, e.g. BSOD visualizations.
 

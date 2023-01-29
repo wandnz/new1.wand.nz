@@ -3,11 +3,12 @@ layout: sections
 title: Documentation
 ---
 
-Editing the WAND site
-=====================
-- - -
+# Editing the WAND site
 
-**I need to be:** 
+---
+
+**I need to be:**
+
 - [Adding a person](#adding-a-person)
   - [Providing them a profile image](#providing-a-profile-image)
   - [Addding a custom tab name](#addding-a-custom-tab-name)
@@ -27,38 +28,48 @@ Link to markdown parser documentation \[[Kramdown](https://kramdown.gettalong.or
 Link to jekyll templating language \[[liquid](https://shopify.github.io/liquid/basics/introduction/)\]
 
 <!--split-->
+
 ## Adding a person
+
 Create a new markdown file in `collect/_people/` . Add the following to the top of it, (including dashes) and fill out required values.
 
 ```yml
 ---
 layout: person
 name: [full name of person]
-role: [category to be listed under, as per how it appears in _data/pCategory.yml]
+role:
+  [category to be listed under, as per how it appears in _data/pCategory.yml]
 projects: (optional) [project 1's set name], [project 2's set name]
 link: (optional) [external link instead of internal profile page]
 ---
 ```
+
 You can then follow this with any amount of markdown you'd like to describe the person.
 
 Note the only required fields for a person are layout, name and role. Adding a link variable will replace the internal page link with an external one.
 
 #### Providing a profile image
+
 To set the image of a person, drop the image into `assets/images/` . Make sure to rename the image to the persons name value in lowercase, and spaces set to underscores.
 
 eg. name: Jane Doe
 Will request an image called jane_doe.[image extention]
 
 #### Adding a new category of people
+
 Simply append your category to `_data/pCategory.yml` in the format
 
 ```yml
 - name: [category's name]
 ```
+
 <!--split-->
+
 ## Adding a project
+
 #### With an internal link
-Create a new markdown file in `collect/_projects/`  . Add the following to the top of it (including dashes) and fill out required values.
+
+Create a new markdown file in `collect/_projects/` . Add the following to the top of it (including dashes) and fill out required values.
 
 ```yml
 ---
@@ -69,10 +80,11 @@ description: [short project description]
 title: [changes the displayed tab name]
 ---
 ```
+
 You can then follow this with any amount of markdown you'd like to describe the project.
 
-
 #### With an external link
+
 Open the file `_data/externalProject.yml` and attach your projects details appropriately in the format.
 
 ```yml
@@ -83,7 +95,9 @@ Open the file `_data/externalProject.yml` and attach your projects details appro
 ```
 
 <!--split-->
+
 ## Adding a research topic (Listed under research tab)
+
 Create a new markdown file in `collect/_research/`. Add the following to the top of it (including dashes) and fill out required values.
 
 ```yml
@@ -93,10 +107,13 @@ name: [put your topic name here]
 title: [changes the displayed tab name]
 ---
 ```
+
 You can then follow this with any amount of markdown you'd like to describe the topic.
 
 <!--split-->
+
 ## Adding a main page (eg, Home)
+
 To add a main page, simply add a markdown file to the site's main directory. To add a link to it in the nav bar, add its address to the `data/navigation.yml` file.
 
 ```yml
@@ -105,6 +122,7 @@ To add a main page, simply add a markdown file to the site's main directory. To 
 ```
 
 #### With a dropdown menu
+
 If the nav items name already has an existing collection with the same name, simply add the drop variable.
 For example:
 
@@ -113,9 +131,11 @@ For example:
   link: people.html
   drop: yes
 ```
+
 As long as there is a collection existing with the name value lowercase (eg. people). A drop down menu will be generated with links to the items in the collection. Note that dropdown menus are not displayed on mobile.
 
 <!--split-->
+
 ## Using the different layouts
 
 **default** - Will simply output the content unformatted and center aligned. This layout is designed as a gateway for other layouts, therefore this layout is not reccommended for using with content directly.
@@ -137,15 +157,17 @@ As long as there is a collection existing with the name value lowercase (eg. peo
 <!--split-->
 
 ## Adding a new collection
+
 Modify `_config.yml` by adding the collections name under the `collections:` variable. Adding the `output:` variable allows you to output individual pages for each collection entry if you set it to true.
 
 eg.
+
 ```yml
 collections:
-     people:
-        output: true
-     research:
-        output: true
+  people:
+    output: true
+  research:
+    output: true
 ```
 
 Note sometimes using tab characters can break this, use spaces instead.

@@ -3,4 +3,4 @@ layout: research
 title: Research
 ---
 
-# Our Research 
+# Our Research

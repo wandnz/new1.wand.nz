@@ -11,7 +11,7 @@ title: libconfig
 libconfig is a simple library for dealing with parsing config files. It's used for several of WAND's projects.
 
 **The latest version is [1.0.5](../downloads/libconfig-1.0.5.tar.gz)**  
-The latest version can always be retrieved from [here](../downloads/libconfig-latest.tar.gz)  
+The latest version can always be retrieved from [here](../downloads/libconfig-latest.tar.gz)
 
 ## Installation instructions
 

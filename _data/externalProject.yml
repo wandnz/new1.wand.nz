@@ -20,7 +20,7 @@
   description: >-
     Bearwall is a firewall builder for Linux written in bash. Bearwall is built to 
     handle both ipv4 and ipv6 firewalling by translating all Bearwall rules into 
-    rules for iptables and ip6tables. 
+    rules for iptables and ip6tables.
   link: https://github.com/jimmyish/bearwall/wiki
 
 - topic: Trace processing
@@ -28,7 +28,7 @@
   description: >-
     Libflowmanager is a library designed to facilitate performing flow-based 
     measurement tasks using packet-based inputs, particularly packet trace files. 
-    It is based on the libtrace trace processing library. 
+    It is based on the libtrace trace processing library.
   link: https://github.com/wanduow/libflowmanager
 
 - topic: Trace processing
@@ -51,9 +51,9 @@
     transparently reading from and writing to files using a variety of supported 
     compression methods. Provided pthreads are available, I/O performance 
     will be improved by doing any compression and/or decompression using a 
-    separate thread. 
+    separate thread.
   link: https://github.com/wanduow/wandio/wiki
-  
+
 - topic: Projects
   name: Libwdcap
   description: >-

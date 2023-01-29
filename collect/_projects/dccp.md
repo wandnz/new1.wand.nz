@@ -30,7 +30,7 @@ The code for 2.4.27 is accompanied by install instructions, sample programs and 
 
 The code can be downloaded by clicking on the below URL:
 
-*   [dccp-0.1.tar.gz](../downloads/dccp-0.1.tar.gz)
+- [dccp-0.1.tar.gz](../downloads/dccp-0.1.tar.gz)
 
 If you wish to use a version of the WAND code which has been ported to 2.6.11.4 please contact [Ian McDonald](http://wand.net.nz/~iam4) although it is recommended to use the code in the Linux kernel instead.
 

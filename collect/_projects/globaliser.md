@@ -2,7 +2,7 @@
 layout: sections
 name: globaliser
 topic: Archived projects
-description: The globaliser allows static virtualisation of C source code by filtering preprocessed C. It is used in the Network Simulation Cradle. This is the standablone release. 
+description: The globaliser allows static virtualisation of C source code by filtering preprocessed C. It is used in the Network Simulation Cradle. This is the standablone release.
 title: globaliser
 ---
 

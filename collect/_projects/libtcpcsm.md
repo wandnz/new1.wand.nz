@@ -2,7 +2,7 @@
 layout: sections
 name: libtcpcsm
 topic: Archived projects
-description: The libtcpcsm software is designed to facilitate the analysis of TCP sending behaviour, i.e. detecting loss and reordering events or tracking congestion window size, in packet header traces. It is based on the libtrace trace processing library. 
+description: The libtcpcsm software is designed to facilitate the analysis of TCP sending behaviour, i.e. detecting loss and reordering events or tracking congestion window size, in packet header traces. It is based on the libtrace trace processing library.
 title: libtcpcsm
 ---
 
@@ -20,15 +20,15 @@ Libtcpcsm and any tools built using it are licensed under the GPL v2.
 
 ## Recent changes
 
-*   Fixed missing header in librtt.h that would prevent compilation when using recent versions of gcc.
+- Fixed missing header in librtt.h that would prevent compilation when using recent versions of gcc.
 
 ## Requirements
 
 Libtcpcsm requires the following libraries:
 
-*   [libtrace](https://github.com/LibtraceTeam/libtrace/wiki)
-*   [libflowmanager](https://github.com/wanduow/libflowmanager)
-*   [libtcptools](libtcptools.html)
+- [libtrace](https://github.com/LibtraceTeam/libtrace/wiki)
+- [libflowmanager](https://github.com/wanduow/libflowmanager)
+- [libtcptools](libtcptools.html)
 
 Libtcpcsm and the bundled tools have been developed and tested to run on the Linux operating system only. This software is not currently supported for other Unix-based operating systems, but may still build and run successfully.
 
@@ -36,9 +36,9 @@ Libtcpcsm and the bundled tools have been developed and tested to run on the Lin
 
 There are three tools currently shipped with libtcpcsm:
 
-*   tcpcsm, which reports congestion events only.
-*   flight_cwnd, which reports congestion events and flight sizes.
-*   psh_analyser, which reports congestion events and PSH flights. A PSH flight is defined as the amount of data sent between TCP PSH flags.
+- tcpcsm, which reports congestion events only.
+- flight_cwnd, which reports congestion events and flight sizes.
+- psh_analyser, which reports congestion events and PSH flights. A PSH flight is defined as the amount of data sent between TCP PSH flags.
 
 Each tool can be run with the -h flag on the command-line to provide full usage information. Alternatively, there is also a README in the source directory for each tool which explains the tool in more detail.
 

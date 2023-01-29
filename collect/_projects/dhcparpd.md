@@ -18,12 +18,12 @@ We strongly recommend that you do not run dhcparpd on a wired network. It is hig
 
 ## Getting dhcparpd
 
-dhcparpd is currently regarded as beta quality software. It has been used to successfully manage a conference network with over 200 wireless clients.  
+dhcparpd is currently regarded as beta quality software. It has been used to successfully manage a conference network with over 200 wireless clients.
 
-The current release of dhcparpd is **revision 52**:  
+The current release of dhcparpd is **revision 52**:
 
-*   [dhcparpd r52 (gzipped tarball)](../downloads/dhcparpd-r52.tar.gz)
-*   [dhcparpd r52 (bzipped tarball)](../downloads/dhcparpd-r52.tar.bz2)
+- [dhcparpd r52 (gzipped tarball)](../downloads/dhcparpd-r52.tar.gz)
+- [dhcparpd r52 (bzipped tarball)](../downloads/dhcparpd-r52.tar.bz2)
 
 Debian packages should be available very very shortly. Email us if you need them.
 

@@ -2,7 +2,7 @@
 layout: sections
 name: NSC
 topic: Archived projects
-description: The Network Simulation Cradle (NSC) is a framework which allows real world TCP/IP network stacks to be used inside a network simulator. More information here. 
+description: The Network Simulation Cradle (NSC) is a framework which allows real world TCP/IP network stacks to be used inside a network simulator. More information here.
 title: NSC
 ---
 
@@ -16,10 +16,10 @@ The Network Simulation Cradle (NSC) is a framework which allows real world TCP/I
 
 Currently NSC allows using the following network stacks in the network simulator [ns-2](http://www.isi.edu/nsnam/ns/):
 
-*   [Linux](http://www.kernel.org)
-*   [FreeBSD](http://www.freebsd.org)
-*   [OpenBSD](http://www.openbsd.org)
-*   [lwIP](http://savannah.nongnu.org/projects/lwip/)
+- [Linux](http://www.kernel.org)
+- [FreeBSD](http://www.freebsd.org)
+- [OpenBSD](http://www.openbsd.org)
+- [lwIP](http://savannah.nongnu.org/projects/lwip/)
 
 ## Development version
 

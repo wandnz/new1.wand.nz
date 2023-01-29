@@ -4,11 +4,12 @@ name: Jane Doe Example
 role: Academic Staff Example
 projects: OpenLI, Example external project
 ---
-Jane has worked on Jekyll for the past *five years*.
+
+Jane has worked on Jekyll for the past _five years_.
 
 Many other cool things about jane .... augobueia geagb eagbeiua buige
 gu ebua g ueabgu eabuig bueia gbueag eab uiebg uea
-g ueaghu eabugaeb eaug beaui gbeauig beauig bueag bieaui 
+g ueaghu eabugaeb eaug beaui gbeauig beauig bueag bieaui
 
 ### Contact
 

@@ -45,29 +45,36 @@ The device driver to control the FPGA NTP server is setup as a character device.
  ----------------------------------------------------------------------------
 </pre>
 
-*   Time:
-    *   64-bit value used to set the current time of the NTP server
+- Time:
 
-*   Addend:
-    *   64-bit value to determine how much time should increment on each clock tick
+  - 64-bit value used to set the current time of the NTP server
 
-*   IPv6:
-    *   The IPv6 address to be used by the NTP server (128-bits)
+- Addend:
 
-*   IPv4:
-    *   The IPv4 address to be used by the NTP server (32-bits)
+  - 64-bit value to determine how much time should increment on each clock tick
 
-*   Port:
-    *   The port on which the server should operate (16-bits padded to 32)
+- IPv6:
 
-*   MAC:
-    *   The MAC address for the network controller connected to the NTP server (48-bits padded to 64)
+  - The IPv6 address to be used by the NTP server (128-bits)
 
-*   Buffer 1 & 2 Memory Address:
-    *   The physical memory address of the buffers used to store NTP log data (room for 32 & 64-bit pointers)
+- IPv4:
 
-*   Buffer Length:
-    *   The length (in bytes) of the buffers used to store NTP log data (32-bits)
+  - The IPv4 address to be used by the NTP server (32-bits)
+
+- Port:
+
+  - The port on which the server should operate (16-bits padded to 32)
+
+- MAC:
+
+  - The MAC address for the network controller connected to the NTP server (48-bits padded to 64)
+
+- Buffer 1 & 2 Memory Address:
+
+  - The physical memory address of the buffers used to store NTP log data (room for 32 & 64-bit pointers)
+
+- Buffer Length:
+  - The length (in bytes) of the buffers used to store NTP log data (32-bits)
 
 ## Sources
 
@@ -75,14 +82,14 @@ The device driver to control the FPGA NTP server is setup as a character device.
 
 ##### Linux Software:
 
-*   Driver: [ntp_fpga.c](../downloads/ntp_fpga.c)
-*   Header: [ntp_fpga.h](../downloads/ntp_fpga.h)
-*   Install script: [install.sh](../downloads/install.sh)
+- Driver: [ntp_fpga.c](../downloads/ntp_fpga.c)
+- Header: [ntp_fpga.h](../downloads/ntp_fpga.h)
+- Install script: [install.sh](../downloads/install.sh)
 
 ## Contact Details
 
 The FPGA NTP server was written by ...
 
-*   Anthony Blake
-*   Mark Will
-*   Jack Elliott
+- Anthony Blake
+- Mark Will
+- Jack Elliott
