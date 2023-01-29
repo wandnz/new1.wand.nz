@@ -9,8 +9,6 @@ collections:
     output: true
   projects:
     output: true
-  wits:
-    output: true
 
 title: WAND Group
 email: contact@wand.net.nz

@@ -87,15 +87,6 @@
   link: http://www.caida.org/tools/measurement/scamper/
 
 - topic: Projects
-  name: WITS
-  description: >-
-    The Waikato Internet Traffic Storage project aims to collect and document all the 
-    Internet traces that the WAND Group has in their possession. Some of these trace 
-    sets are now freely available for researchers to download. We hope to continue 
-    releasing other traces in the future.
-  link: ../wits
-
-- topic: Projects
   name: Faucet
   description: >-
     Faucet is a compact open source OpenFlow controller for enterprise networks. It is 
