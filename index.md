@@ -1,6 +1,6 @@
 ---
 layout: plain
-title: WAND
+title: Home
 ---
 
 # WAND Group
