@@ -8,7 +8,11 @@ description: >-
   WAND was the Network Research Group in the University of Waikato's Computer Science Department
 
 copyright: >-
-  &copy; WAND Group | <a href="mailto:contact@wand.net.nz">contact@wand.net.nz</a>
+  &copy; WAND Group
+  | <a href="mailto:contact@wand.net.nz">contact@wand.net.nz</a>
+  | <a href="https://github.com/wandnz/" style="vertical-align: middle;">
+      <img src="assets/images/github-mark.svg" width="15px" alt="GitHub">
+    </a>
 
 remote_theme: wandnz/jekyll-theme-wand2
 
