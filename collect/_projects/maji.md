@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: maji
-topic: Archived projects
+topic: Projects
 description: Maji is an implementation of an IPFIX meter based on the libtrace packet capture and processing library. IPFIX itself is a standardised method for performing and exporting flow measurement data, similar to the Cisco NetFlow standard.
 title: maji
 ---

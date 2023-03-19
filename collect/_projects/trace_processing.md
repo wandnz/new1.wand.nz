@@ -1,5 +1,5 @@
 ---
-layout: topic
+layout: sections
 title: Trace processing
 name: Trace processing
 topic: Projects

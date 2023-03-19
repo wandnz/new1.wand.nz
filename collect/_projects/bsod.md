@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: BSOD
-topic: Archived projects
+topic: Projects
 description: The bsod visualisation tool uses the libtrace framework to transform network traffic into a graphical format that can be viewed in real time. Capturing from a live network interface, or from a saved trace file, bsod visualises the flow of network data between hosts, providing (at a glance) information about network usage.
 title: BSOD
 ---

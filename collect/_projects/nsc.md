@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: NSC
-topic: Archived projects
+topic: Projects
 description: The Network Simulation Cradle (NSC) is a framework which allows real world TCP/IP network stacks to be used inside a network simulator. More information here.
 title: NSC
 ---

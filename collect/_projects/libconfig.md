@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: libconfig
-topic: Archived projects
+topic: Projects
 description: libconfig is a simple library for dealing with parsing config files. It's used for several of WAND's projects.
 title: libconfig
 ---

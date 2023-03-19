@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: DCCP
-topic: Archived projects
+topic: Projects
 description: DCCP (Datagram Congestion Control Protocol) is a transport level protocol designed to transport data over unreliable sessions using congestion control. It has been released as a series of RFCs (4340-4342) and has an IETF working group tracking it's progress.
 title: DCCP
 ---

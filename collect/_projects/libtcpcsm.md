@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: libtcpcsm
-topic: Archived projects
+topic: Projects
 description: The libtcpcsm software is designed to facilitate the analysis of TCP sending behaviour, i.e. detecting loss and reordering events or tracking congestion window size, in packet header traces. It is based on the libtrace trace processing library.
 title: libtcpcsm
 ---

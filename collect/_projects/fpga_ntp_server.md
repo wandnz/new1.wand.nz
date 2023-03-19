@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: FPGA NTP Server
-topic: Archived projects
+topic: Projects
 description: Highly accurate synchronization of computer clocks is critical for many applications, such as air traffic control and high-frequency trading.
 title: FPGA NTP Server
 ---

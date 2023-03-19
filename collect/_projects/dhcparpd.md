@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: dhcparpd
-topic: Archived projects
+topic: Projects
 description: dhcparpd is a tool to mitigate the effects of IP spoofing attacks on ethernet based networks. dhcparpd was initially written to help manage the conference network for Linux.Conf.AU held in Dunedin in January 2006.
 title: dhcparpd
 ---

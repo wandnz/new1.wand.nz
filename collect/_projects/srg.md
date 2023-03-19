@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: SRG
-topic: Archived projects
+topic: Projects
 description: SRG is a Squid Report Generator designed for the needs of CRCnet. None of the existing report generators could provide the exact solution that we required and we decided to start from scratch rather than trying to modify an existing progamme. SRG is designed to be fast and easy to integrate in to other authentication systems (such as those that are driving Squid itself).
 title: SRG
 ---

@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: nettest
-topic: Archived projects
+topic: Projects
 description: Nettest was a cross platform, distributed network measurement tool designed to passively monitor a users connection to the Internet.
 title: nettest
 ---

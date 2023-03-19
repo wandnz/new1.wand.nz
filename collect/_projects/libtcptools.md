@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: libtcptools
-topic: Archived projects
+topic: Projects
 description: Libtcptools is a library that leverages libtrace to perform several useful TCP analysis tasks, including RTT estimation, classification of reordering events and bandwidth estimation.
 title: Libtcptools
 ---

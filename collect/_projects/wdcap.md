@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: WDCap
-topic: Archived projects
+topic: Projects
 description: WDCap is a tool for capturing packet traces. It is heavily based on the libtrace library.
 title: WDCap
 ---

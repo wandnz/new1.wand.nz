@@ -1,7 +1,7 @@
 ---
 layout: sections
 name: Darpwatch
-topic: Archived projects
+topic: Projects
 description: Darpwatch is a solution for monitoring ethernet activity across many different ethernet networks. Darpwatch is based on the original arpwatch source from UCB.
 title: Darpwatch
 ---
