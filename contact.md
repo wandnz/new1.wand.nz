@@ -5,4 +5,4 @@ title: Contact
 
 # Contact us
 
-Email us: [contact@wand.net.nz](mailto:contact@wand.net.nz).
+Email us at [contact@wand.net.nz](mailto:contact@wand.net.nz).
